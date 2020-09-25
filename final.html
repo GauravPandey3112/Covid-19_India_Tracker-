@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="covid1.css">
+  </head>
+  <body>
+    <div class="row1 col-sm">
+        <div class="column">
+
+              <div class="container-fluid bg-light">
+                <h3><strong>INDIA COVID-19 Tracker</strong></h3>
+                <p class="text-muted">Let's all pray to make our Earth Covid-19 free soon. Stay Safe and do The Locate</p>
+              </div>
+
+              <div class="row">
+                <div class="column canvas-con-inner">
+                  <canvas id="myChart"></canvas>
+                </div>
+                <div class="column">
+                  <canvas id="chart"></canvas>
+                </div>
+                </div>
+
+
+              <div id='statetable' class="container col-sm">
+                <table class="table table-striped table-hover container">
+                  <tr>
+                    <th>State/UT</th>
+                    <th>Confirmed</th>
+                    <th>Active</th>
+                    <th>Recovered</th>
+                    <th>Deceased</th>
+                  </tr>
+                  <tbody id="state_table"></tbody>
+                </table>
+              </div>
+            </div>
+        <div class="column">
+              <div class="container-fluid bg-light">
+                <h3><strong>INDIA MAP</strong></h3>
+                <p class="text-muted">HOVER OVER STATE FOR MORE DETAILS</p>
+              </div>
+              <div class="container">
+                <div class="row text-center">
+                  <div class="container col-3 text-danger">
+                    <h5>Confirmed</h5>
+                    <p id="confirmed"></p>
+                  </div>
+                  <div class="container col-3 text-info">
+                    <h5>Active</h5>
+                    <p id="active"></p>
+                  </div>
+                  <div class="container col-3 text-success">
+                    <h5>Recovered</h5>
+                    <p id="recovered"></p>
+                  </div>
+                  <div class="container col-3 text-warning">
+                    <h5>Deceased</h5>
+                    <p id="deceased"></p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="container mr-3 mt-4">
+                <div class="map container">
+                  <img src="india1.svg" alt="not found" style="width:100%;height:auto;">
+                </div>
+              </div>
+
+
+
+        </div>
+</div>
+
+
+
+  </body>
+  <script src="  https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" charset="utf-8"></script>
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-pie.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="covid2.js" charset="utf-8"></script>
+</html>
